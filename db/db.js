@@ -1,9 +1,10 @@
-const con = mysql.createConnection(
-    {
-        user: "root",
-        host:"localhost",
-        password: "",
-        database: "js_project ",
-    }
+import mysql from "mysql";
 
+export const db = mysql.createConnection(
+    {
+        host:"localhost",
+        user: "root",
+        password: "",
+        database: "js_project",
+    }
 );
